@@ -1,9 +1,30 @@
 let lista = ["ARBOL","ANGEL","MARCO","CARRO","BARRO"];
 //let palabra = "ARBOL";
 
-let palabra = lista[Math.floor(Math.random()*lista.length)];
-alert(palabra);
+let palabra = ""//lista[Math.floor(Math.random()*lista.length)];
+//alert(palabra);
 let intentos = 6;
+
+
+//https://random-word-api.herokuapp.com/home
+
+ const API = "https://random-word-api.herokuapp.com/word?length=5&lang=es"
+
+fetch(API)
+    .then(response => response.json())
+    .then(response =>{
+        console.log(response)
+        palabra = response[0].toUpperCase()
+        console.log(palabra)
+    })
+    .catch(err => palabra = lista[Math.floor(Math.random()*liata.length)]);
+
+
+
+
+
+
+
 
 const BOTON = document.getElementById("guess-button");
 BOTON.addEventListener('click', intentar)

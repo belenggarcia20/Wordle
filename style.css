@@ -21,7 +21,7 @@ body {
     margin: 0 auto;
     padding: 10px 20px;
     font-size: 18px;
-    background-color: #0CBABA;
+    background-color: #047575;
     color: #fff;
     border: none;
     border-radius: 3px;
@@ -39,7 +39,10 @@ body {
       text-align: center;
       display: inline-block
   }
-     
+    
+  .grid{
+    text-align: center;
+  }
   .row{
       margin-bottom: 10px;
   }
